@@ -14,27 +14,66 @@
       h1 {
         font-size: 45px;
         text-align: center;
-        border-bottom:1px solid gray;
+        border-bottom: 1px solid gray;
         margin: 0;
-        padding: 20px;;
-      }
-      h2 {
-        font-size: 30px;
-        text-align: center;
+        padding: 70px;
       }
       #grid {
         display: grid;
-        grid-template-columns: 150px 1fr;
+        grid-template-columns: 200px 1fr;
       }
-      #grid ol {
-
+      #grid #artists {
         border-right: 1px solid gray;
-        margin: 0px;
-        padding: 20px;
-        padding-left: 35px;
+      }
+      #grid ul {
+        margin: auto;
+        margin-top: 50px;
+        padding-left: 50px;
       }
       #grid #article {
-        padding-left: 25px;
+        display: grid;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      #grid #article #info {
+        width: 600px;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #grid #article #info h2 {
+        margin: 0px;
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid gray;
+      }
+      #grid #article #info #img {
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+      }
+      #grid #article #info #youtube {
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+      }
+      #grid #article #data {
+        width: 570px;
+        margin: auto;
+        margin-top: 80px;
+      }
+      #grid #article #data p {
+        margin-bottom: 25px;
+      }
+      #grid #article #disqus_thread {
+        margin: 50px;
+        margin-top: 80px;
       }
     </style>
   </head>
@@ -42,90 +81,98 @@
   <body>
     <h1><a href="index.html">My Favorite Artists</a></h1>
     <div id="grid">
-    <ol>
-      <li><a href="1.html">Charlie Puth</a></li>
-      <li><a href="2.html">Billie Eilish</a></li>
-      <li><a href="3.html">Sam Smith</a></li>
-      <li><a href="4.html">Sia</a></li>
-    </ol>
-    <div id="article">
-      <h2>Sia</h2>
-      <img src=".\img\Sia.jfif" width="560" />
-      <p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/31crA53Dgu0"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </p>
-      <p>
-        <strong
-          ><u
-            ><a
-              href="https://www.youtube.com/c/sia"
-              target="_blank"
-              title="Youtube link"
-              >Sia Kate Isobelle Furler</a
-            ></u
-          ></strong
-        >
-        (born 18 December 1975) is an Australian singer and songwriter. She
-        started her career as a singer in the acid jazz band Crisp in the
-        mid-1990s in Adelaide. In 1997, when Crisp disbanded, she released her
-        debut studio album, titled OnlySee, in Australia. She moved to London and
-        provided vocals for the British duo Zero 7. Sia released her second studio
-        album, Healing Is Difficult, in 2001, and her third, Colour the Small One,
-        in 2004.
-      </p>
-      <p style="margin-top: 40px">
-        Sia moved to New York City in 2005 and toured the United States. Her
-        fourth and fifth studio albums, Some People Have Real Problems and We Are
-        Born, were released in 2008 and 2010, respectively. Each was certified
-        gold by the Australian Recording Industry Association and attracted wider
-        notice than her earlier albums. Uncomfortable with her growing fame, Sia
-        took a hiatus from performing and focused on songwriting for other
-        artists, producing successful collaborations "Titanium" (with David
-        Guetta), "Diamonds" (with Rihanna) and "Wild Ones" (with Flo Rida).
-      </p>
-    </div>
-    <p>
-      <div id="disqus_thread"></div>
-      <script>
-      /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      /*
-      var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      */
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://my-favorite-artists.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-      (function(){
-      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-      s1.async=true;
-      s1.src='https://embed.tawk.to/634bbcdab0d6371309c9c54a/1gfftjdrk';
-      s1.charset='UTF-8';
-      s1.setAttribute('crossorigin','*');
-      s0.parentNode.insertBefore(s1,s0);
-      })();
-    </script>
-  <!--End of Tawk.to Script-->
+      <div id="artists">
+        <ul>
+          <li><a href="1.html">Charlie Puth</a></li>
+          <li><a href="2.html">Billie Eilish</a></li>
+          <li><a href="3.html">Sam Smith</a></li>
+          <li><a href="4.html">Sia</a></li>
+        </ul>
+      </div>
+      <div id="article">
+        <div id="info">
+          <h2>Sia</h2>
+          <div id="img">
+            <img src=".\img\Sia.jfif" width="560" />
+          </div>
+          <div id="youtube">
+            <p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/31crA53Dgu0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </p>
+          </div>
+        </div>
+        <div id="data">
+          <p>
+            <strong
+              ><u
+                ><a
+                  href="https://www.youtube.com/c/sia"
+                  target="_blank"
+                  title="Youtube link"
+                  >Sia Kate Isobelle Furler</a
+                ></u
+              ></strong
+            >
+            (born 18 December 1975) is an Australian singer and songwriter. She
+            started her career as a singer in the acid jazz band Crisp in the
+            mid-1990s in Adelaide. In 1997, when Crisp disbanded, she released her
+            debut studio album, titled OnlySee, in Australia. She moved to London and
+            provided vocals for the British duo Zero 7. Sia released her second studio
+            album, Healing Is Difficult, in 2001, and her third, Colour the Small One,
+            in 2004.
+          </p>
+          <p>
+            Sia moved to New York City in 2005 and toured the United States. Her
+            fourth and fifth studio albums, Some People Have Real Problems and We Are
+            Born, were released in 2008 and 2010, respectively. Each was certified
+            gold by the Australian Recording Industry Association and attracted wider
+            notice than her earlier albums. Uncomfortable with her growing fame, Sia
+            took a hiatus from performing and focused on songwriting for other
+            artists, producing successful collaborations "Titanium" (with David
+            Guetta), "Diamonds" (with Rihanna) and "Wild Ones" (with Flo Rida).
+          </p>
+        </div>
+        <div id="disqus_thread"></div>
+          <script>
+            /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://my-favorite-artists.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <!--Start of Tawk.to Script-->
+          <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/634bbcdab0d6371309c9c54a/1gfftjdrk';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+          </script>
+        <!--End of Tawk.to Script-->
+      </div>
     </div>
   </body>
 </html>
